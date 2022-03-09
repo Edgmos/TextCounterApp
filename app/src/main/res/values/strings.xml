@@ -4,8 +4,6 @@
         <item>Words</item>
         <item>Chars</item>
     </string-array>
-    <string name="words_st">Words</string>
-    <string name="chars_st">Chars</string>
     <string name="start">Waiting for your text</string>
     <string name="btnName">Count</string>
 </resources>

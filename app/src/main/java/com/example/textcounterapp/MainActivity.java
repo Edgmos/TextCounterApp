@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     TextView txtResult;
     EditText txtMain;
     Spinner spOption;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +37,12 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
 
-            if (this.spOption.getSelectedItem().toString().equalsIgnoreCase("Words")) {
+            if (this.spOption.getSelectedItem().toString().equalsIgnoreCase(getResources().getStringArray(R.array.counting_options)[0])) {
                 int wordsCount = TextUtils.getWordsCount(this.txtMain.getText().toString().split("\\s+"));
                 String wordsCountFormated = String.valueOf(wordsCount);
                 this.txtResult.setText("The number of words in the given text is: " + wordsCountFormated);
-
-
-            } else {
+            }
+            else {
                 int charsCount = TextUtils.getCharsCount(this.txtMain.getText().toString());
                 String charsCountFormated = String.valueOf(charsCount);
                 this.txtResult.setText("The number of chars in the given text is: " + charsCountFormated);
