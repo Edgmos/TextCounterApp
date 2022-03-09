@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TextCounterApp</string>
+    <string-array name="counting_options">
+        <item>Words</item>
+        <item>Chars</item>
+    </string-array>
+    <string name="words_st">Words</string>
+    <string name="chars_st">Chars</string>
+</resources>
