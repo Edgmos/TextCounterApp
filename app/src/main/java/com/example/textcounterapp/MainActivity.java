@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
             if (this.spOption.getSelectedItem().toString().equalsIgnoreCase("Words")) {
                 int wordsCount = TextUtils.getWordsCount(this.txtMain.getText().toString().split("\\s+"));
                 String wordsCountFormated = String.valueOf(wordsCount);
-                this.txtResult.setText(wordsCountFormated);
+                this.txtResult.setText("The number of words in the given text is: " + wordsCountFormated);
 
 
             } else {
                 int charsCount = TextUtils.getCharsCount(this.txtMain.getText().toString());
                 String charsCountFormated = String.valueOf(charsCount);
-                this.txtResult.setText(charsCountFormated);
+                this.txtResult.setText("The number of chars in the given text is: " + charsCountFormated);
 
             }
         }
